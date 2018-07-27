@@ -1,7 +1,7 @@
 {
   "name": "Gatui - Developer portal",
   "description": "Gatui - A OpenSource developer portal",
-  "repository": "",
+  "repository": "https://github.com/voyages-sncf-technologies/gatui",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["node", "vuejs", "swagger"]
 }

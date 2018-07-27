@@ -1,0 +1,68 @@
+{
+  "globalInfos": {
+    "shortName": "Cats",
+    "shortDesc": "Some awesome pets APIs to gather cat's picture for your awesomeness",
+    "longName": "Cats APIs",
+    "longDesc": { "type": "markdown", "path": "./Cats/Documentation/description.md" },
+    "contributeurs": "God",
+    "owner": {
+      "label": "God",
+      "wiki": "http://perdu.com"
+    },
+    "category": "pets",
+    "path": [
+      "/pets/v1/cats/"
+        ]
+  },
+  "url": [{
+    "label": "Gitlab",
+    "url": "https://github.com/voyages-sncf-technologies"
+    }, {
+      "label": "Swagger",
+      "url": "https://petstore.swagger.io/#/"
+    }, {
+      "label": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Pet_store"
+    }, {
+      "label": "Monitoring cats over the world",
+      "url": "https://demo.elastic.co/app/kibana"
+    }],
+  "documentation": [{
+    "label": "Source of knowledge - Wiki - Cat",
+    "url": "https://en.wikipedia.org/wiki/Cat",
+    "type": "url"
+  },
+  {
+    "label": "Introduction",
+    "path": "./Cats/Documentation/Guide/Intro.md",
+    "type": "markdown"
+  },
+  {
+    "label": "Description",
+    "path": "./Cats/Documentation/Guide/Blbl.md",
+    "type": "markdown"
+  }
+  ],
+  "contacts": [{
+    "label": "No-one",
+    "url": "mailto:null@null.null"
+  }, {
+    "label": "Nothing",
+    "url": "https://null.slack.null"
+  }, {
+    "label": "No-body",
+    "url": "https://null.hipchat.null"
+  }],
+  "configuration": {
+    "exemple": "curl -H \"application/json\" \"http://perstore:58200/cats/v1/\"\n"
+  },
+  "statusInfos": {
+    "status": "Released",
+    "owner": "God"
+  },
+  "swagger": { "type": "url", "url": "https://petstore.swagger.io/v2/swagger.json" },
+  "extra": {
+    "projetName": "cats-v1",
+    "trigram": "CAT"
+  }
+}

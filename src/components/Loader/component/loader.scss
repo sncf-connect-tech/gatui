@@ -1,0 +1,185 @@
+@import "config/configApp.var";
+
+$loader-rotation-duration: 1.2s;
+$loader-arc-delay: $loader-rotation-duration * 0.11;
+$loader-arc-rotate-animation: loader-arc-rotate;
+$loader-background-toggle-animation: loader-background-toggle;
+
+$loader-arc-color: (
+    "arc-1": #ea4d94,
+    "arc-2": #b51742,
+    "arc-3": #e73b27,
+    "arc-4": #f28a2c,
+    "arc-5": #f7a62b,
+    "arc-6": #fbcc24
+);
+
+$loader-arc-6-color: map-get($loader-arc-color, "arc-6");
+
+@mixin loader-arc($arc-number) {
+    $arc-color: map-get($loader-arc-color, "arc-#{$arc-number}");
+
+    &__arc--#{$arc-number} {
+        border-bottom-color: $arc-color;
+        -webkit-animation-delay: $loader-arc-delay * ($arc-number - 1);
+                animation-delay: $loader-arc-delay * ($arc-number - 1);
+    }
+
+    &__arc--#{$arc-number}::before {
+        background-color: $arc-color;
+    }
+}
+
+@mixin loader-generic-arc-extremity($is-end: false) {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 79%;
+    width: 0.15em;
+    height: 0.15em;
+    border-radius: 100% 25% 0;
+
+    @if ($is-end == true) {
+        right: -9%;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    } @else {
+        left: -9%;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+}
+
+
+#{'.loader'} {
+    font-size: rem(56px);
+    position: relative;
+    width: 1em;
+    height: 0.7125em;
+    overflow: hidden;
+
+    &__background,
+    &__arc {
+        position: absolute;
+        top: 0.05em;
+        left: 0.05em;
+        width: 0.9em;
+        height: 0.9em;
+        border: 0.15em solid transparent;
+        border-radius: 50%;
+    }
+
+    &__background {
+        -webkit-animation: $loader-background-toggle-animation ($loader-rotation-duration * 2) linear ($loader-arc-delay * 5) infinite;
+                animation: $loader-background-toggle-animation ($loader-rotation-duration * 2) linear ($loader-arc-delay * 5) infinite;
+    }
+
+    &__arc {
+        -webkit-animation: $loader-arc-rotate-animation $loader-rotation-duration linear infinite;
+                animation: $loader-arc-rotate-animation $loader-rotation-duration linear infinite;
+    }
+
+    &__arc::before {
+        @include loader-generic-arc-extremity(false);
+    }
+
+    @for $arc-number from 1 through 6 {
+        @include loader-arc($arc-number);
+    }
+
+    &__arc--6::after {
+        @include loader-generic-arc-extremity(true);
+        background-color: $loader-arc-6-color;
+    }
+}
+
+@-webkit-keyframes #{$loader-background-toggle-animation} {
+    0% {
+        border-color: transparent;
+    }
+
+    12.5% {
+        border-color: transparent transparent transparent $loader-arc-6-color;
+    }
+
+    25% {
+        border-color: $loader-arc-6-color $loader-arc-6-color transparent $loader-arc-6-color;
+    }
+
+    50% {
+        border-color: $loader-arc-6-color $loader-arc-6-color transparent $loader-arc-6-color;
+    }
+
+    60% {
+        border-color: $loader-arc-6-color $loader-arc-6-color transparent transparent;
+    }
+
+    70% {
+        border-color: transparent $loader-arc-6-color transparent transparent;
+    }
+
+    90% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+@keyframes #{$loader-background-toggle-animation} {
+    0% {
+        border-color: transparent;
+    }
+
+    12.5% {
+        border-color: transparent transparent transparent $loader-arc-6-color;
+    }
+
+    25% {
+        border-color: $loader-arc-6-color $loader-arc-6-color transparent $loader-arc-6-color;
+    }
+
+    50% {
+        border-color: $loader-arc-6-color $loader-arc-6-color transparent $loader-arc-6-color;
+    }
+
+    60% {
+        border-color: $loader-arc-6-color $loader-arc-6-color transparent transparent;
+    }
+
+    70% {
+        border-color: transparent $loader-arc-6-color transparent transparent;
+    }
+
+    90% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes #{$loader-arc-rotate-animation} {
+    from {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes #{$loader-arc-rotate-animation} {
+    from {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}

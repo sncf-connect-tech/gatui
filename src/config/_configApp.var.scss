@@ -1,0 +1,41 @@
+/*
+ * SCSS Configuration
+ *
+ */
+
+// Colors
+$COLOR-PRIMARY: #ea5330;
+$COLOR-SECONDARY: #b51742;
+
+// Black & White
+$COLOR-BLACK: #000;
+$COLOR-WHITE: #fff;
+$COLOR-GREY: #999082;
+$COLOR-GREY-LIGHT: #ecedeb;
+
+// Terminal Colors
+$TERMINAL-WINDOW-RED: #ff5d5b;
+$TERMINAL-WINDOW-RED-BORDER: #ee4644;
+
+$TERMINAL-WINDOW-GREEN: #00c74f;
+$TERMINAL-WINDOW-GREEN-BORDER: #01b849;
+
+$TERMINAL-WINDOW-YELLOW: #ffbb46;
+$TERMINAL-WINDOW-YELLOW-BORDER: #f1ad39;
+
+$TERMINAL-BACKGROUND: #303030;
+
+//  Messages
+$MESSAGE-THEM: #00e34d;
+$MESSAGE-ME: #e5e5ea;
+$MESSAGE-DATE: #8b8b90;
+
+// Fonts
+$FONT-STANDARD: AvenirRoman, AvenirBook, Arial, Helvetica, sans-serif;
+$FONT-HIGHLIGHT: Baloo, AvenirBook, Arial, Helvetica, sans-serif;
+
+// Units Function
+@function rem($px-value, $baseline-px: 16px) {
+    $baseline-rem: $baseline-px / 1rem * 1;
+    @return $px-value / $baseline-rem;
+}

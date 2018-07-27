@@ -1,0 +1,56 @@
+{
+  "globalInfos": {
+    "shortName": "Dogs",
+    "shortDesc": "Some awesome pets APIs to gather dog's picture for your awesomeness",
+    "longName": "Dogs APIs",
+    "longDesc": { "type": "markdown", "path": "./Dogs/Documentation/description.md" },
+    "contributeurs": "God",
+    "owner": {
+      "label": "God",
+      "wiki": "http://perdu.com"
+    },
+    "category": "pets",
+    "path": [
+      "/pets/v1/dogs/"
+        ]
+  },
+  "url": [{
+    "label": "Gitlab",
+    "url": "https://github.com/voyages-sncf-technologies"
+    }, {
+      "label": "Swagger",
+      "url": "https://petstore.swagger.io/#/"
+    }, {
+      "label": "Wiki",
+      "url": "https://en.wikipedia.org/wiki/Pet_store"
+    }, {
+      "label": "Monitoring",
+      "url": "https://demo.elastic.co/app/kibana"
+    }],
+  "documentation": [{
+    "label": "Source of knowledge - Wiki - Dog",
+    "url": "https://en.wikipedia.org/wiki/Dog",
+    "type": "url"
+  },
+  {
+    "label": "Description",
+    "path": "./Dogs/Documentation/description.md",
+    "type": "markdown"
+  }
+  ],
+  "contacts": [{
+    "label": "No-one",
+    "url": "mailto:null@null.null"
+  }, {
+    "label": "No-body",
+    "url": "https://null.hipchien.null"
+  }],
+  "statusInfos": {
+    "status": "Released",
+    "owner": "God"
+  },
+  "extra": {
+    "projetName": "dogs-v1",
+    "trigram": "DOG"
+  }
+}

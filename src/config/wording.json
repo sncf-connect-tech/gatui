@@ -1,0 +1,57 @@
+{
+  "en": {
+    "appName": "Gatui - Developer Portal",
+    "pathGlobal": "http://developerportal",
+    "footerLegals": "Copyright © 2018 - Now - Oui.SNCF",
+    "terminal": {
+      "ps1": "developer@api~:$"
+    },
+    "promo": {
+      "title": "Developer Portal",
+      "left": {
+        "title": "Explore our APIs with Gatui.",
+        "description": "Here you can explore ours APIs about dogs and cats for the construction of your application."
+      },
+      "middle": {
+        "title": "Gatui - An openSource Portal awaiting contributions.",
+        "description": "Feel free to look at our Github's Repository to contribute or give us some feedback. :)"
+      },
+      "right": {
+        "title": "Choose ! Either static or dynamic.",
+        "description": "You can put connectors to the portal and you can link it to a backend instead of generating static files."
+      }
+    },
+    "btnGetStarted": "GET STARTED",
+    "generalCode": {
+      "http": {
+        "Code404": "404 Not Found"
+      },
+      "previous": "Previous",
+      "domain": "Domain",
+      "version": "Version",
+      "status": "Status",
+      "quickLinks": "Quick Links",
+      "documentation": "Documentation",
+      "description": "Description",
+      "contributors": "Contributors",
+      "contacts": "Contacts",
+      "owner_stylized": "🤖 Owner",
+      "contributors_stylized": "👨‍🔧 Contributors"
+    },
+    "projectBar": {
+      "overview": "Overview",
+      "guide": "Guide",
+      "reference": "Reference"
+    },
+    "badges": {
+      "status": "Status",
+      "owner": "Owner"
+    },
+    "feedback": {
+      "line1": "An Idea,",
+      "line2": "A Bug,",
+      "line3": "A Feedback ?",
+      "aria_close": "Close the feedback window."
+    }
+  }
+}

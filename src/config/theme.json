@@ -1,0 +1,15 @@
+{
+  "locale": "en",
+  "debug": true,
+  "github": "https://github.com/voyages-sncf-technologies/gatui",
+  "showSearch": true,
+  "showFeedback": true,
+  "showLogo": true ,
+  "position": {
+    "pets": { 
+      "name": "PetStore Domain",
+      "position": 1,
+      "description": "It's all about some animals"
+    }
+  }
+}

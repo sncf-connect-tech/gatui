@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Gatui - Developer Portal</h1>
 </div>
-(Badges)
+[![Build Status](https://travis-ci.org/voyages-sncf-technologies/gatui.svg?branch=master)](https://travis-ci.org/voyages-sncf-technologies/gatui)
 
 <table>
     <tr>

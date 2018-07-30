@@ -27,7 +27,6 @@ export const getProjects = () => {
     resolve([
       {
         source: {
-          configuration: {...},
           contacts: {...},
           documentation: {...},
           extra: {...},

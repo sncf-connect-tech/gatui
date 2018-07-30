@@ -1,9 +1,16 @@
 dogslanguage: node_js
 node_js: 9
 before_script:
-  - npm install yarn -g
+- npm install yarn -g
 script:
-  - yarn install
-  - yarn lint
-  - yarn build
+- yarn install
+- yarn lint
+- yarn build
 cache: yarn
+deploy:
+  provider: heroku
+  api_key:
+    secure: jZM0zg/PKFFcuV4MxqUfvEi9CAf6t4eCaZ6FO3mb+ooOMKocXvrNLmE5yFGmbVgAKorfQ8Y4xxVkG64G1fYn6+Ens0vrWyPfDEurxPhnx+WpvPed5vAPjnORQkS9cpCf7Zgcz7xGWDZ9buYOzUVzAc+SRgUaJ/E0BjYbxtmcfhv6zW/G6r/gtO3WJTW9hVmzaYyHMrYRelV8KWokW6H8GUynKFbgB6uqm8FLs2uGuRZP7Bpsf+E54zxvpTgzZsF2V+N1i0RlNojgilDc7a+v6sNYaPuOpfe69aHdVlWZorIsD2UwMKZBOMPFVXX9V6oCy0fcqotEQf25JVu1butyNK6+kKUrLvCCKDHFZVnflq96/hNYQPxoMRusLCdDBDQJ7wNh/pAeJyQlI0qPEksOUyW1QmEfy01hp+w/KkZ3NigeYR4zBY8qMmuI9Vh/tXLCziZ3X9nz3vZ0rTmXjKxAC/mMVB4m/Pk07VPGkly+vHBThHcNK6Djln+kAridcuUf6t2rgWmpApFSZ2158rFWEZGExPpPHpuAehiaSXmPOU/Iv3fx+t52i7P61SP+Gvasv/UaMqbNiveuwc0Wa2r0FFUVHCRwJZQV0T/WO3a8WHFRO33eFa41F0BR2ip4iqdiJfYfvmfpy1sLGVFOTRpQ2TCuN/3SCFJlA2+6X+8kjSQ=
+  app: gatui-demo
+  on:
+    repo: voyages-sncf-technologies/gatui

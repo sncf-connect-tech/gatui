@@ -1,7 +1,6 @@
 <div align="center">
 <h1>Gatui - Developer Portal</h1>
 </div>
-[![Build Status](https://travis-ci.org/voyages-sncf-technologies/gatui.svg?branch=master)](https://travis-ci.org/voyages-sncf-technologies/gatui)
 
 <table>
     <tr>
@@ -18,6 +17,8 @@
 
 
 ------------------------------------
+[![Build Status](https://travis-ci.org/voyages-sncf-technologies/gatui.svg?branch=master)](https://travis-ci.org/voyages-sncf-technologies/gatui)
+
 
 [Gatui](http://live.demo.fr) provides an interactive and attractive developer
 portal for your apis that can be deployed anywhere, into your cycle of continious

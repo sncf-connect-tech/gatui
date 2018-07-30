@@ -1,0 +1,9 @@
+dogslanguage: node_js
+node_js: 9
+before_script:
+  - npm install yarn -g
+script:
+  - yarn install
+  - yarn lint
+  - yarn build
+cache: yarn

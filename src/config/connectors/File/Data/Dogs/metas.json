@@ -1,15 +1,15 @@
 {
   "globalInfos": {
-    "shortName": "Dogs",
+    "shortName": "dogs",
     "shortDesc": "Some awesome pets APIs to gather dog's picture for your awesomeness",
-    "longName": "Dogs APIs",
+    "longName": "dogs APIs",
     "longDesc": { "type": "markdown", "path": "./Dogs/Documentation/description.md" },
     "contributeurs": "God",
     "owner": {
       "label": "God",
       "wiki": "http://perdu.com"
     },
-    "category": "pets",
+    "dogegory": "pets",
     "path": [
       "/pets/v1/dogs/"
         ]
@@ -24,33 +24,39 @@
       "label": "Wiki",
       "url": "https://en.wikipedia.org/wiki/Pet_store"
     }, {
-      "label": "Monitoring",
+      "label": "Monitoring dogs over the world",
       "url": "https://demo.elastic.co/app/kibana"
     }],
   "documentation": [{
-    "label": "Source of knowledge - Wiki - Dog",
-    "url": "https://en.wikipedia.org/wiki/Dog",
+    "label": "Source of knowledge - Wiki - dog",
+    "url": "https://en.wikipedia.org/wiki/dog",
     "type": "url"
   },
   {
-    "label": "Description",
+    "label": "Introduction",
     "path": "./Dogs/Documentation/description.md",
     "type": "markdown"
-  }
-  ],
+  }],
   "contacts": [{
     "label": "No-one",
     "url": "mailto:null@null.null"
   }, {
+    "label": "Nothing",
+    "url": "https://null.slack.null"
+  }, {
     "label": "No-body",
     "url": "https://null.hipchien.null"
   }],
+  "configuration": {
+    "exemple": "curl -H \"applidogion/json\" \"http://perstore:58200/dogs/v1/\"\n"
+  },
   "statusInfos": {
     "status": "Released",
     "owner": "God"
   },
+  "swagger": { "type": "url", "url": "https://petstore.swagger.io/v2/swagger.json" },
   "extra": {
     "projetName": "dogs-v1",
-    "trigram": "DOG"
+    "trigram": "dog"
   }
 }

@@ -47,7 +47,7 @@
   display: flex
   justify-content: center
   & .g-min-container
-    max-width: 1400px
+    max-width: 1200px
     width: 100%
 
 .contact
